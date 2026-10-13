@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A sweet little love page for my Butki 💗">
+<meta name="theme-color" content="#fff1f6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="For My Butki 💗">
+<meta property="og:description" content="A sweet little love page. I miss you very much... Jldi aa jawww 🥺❤️">
+<meta name="twitter:card" content="summary">
+<title>For My Butki 💗</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.75), transparent 25%),
+        linear-gradient(135deg, #fff7fa, #ffe8f0, #ffd9e6);
+    color: #7b3b5b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 720px;
+    text-align: center;
+    padding: 45px 25px;
+    border-radius: 30px;
+    background: rgba(255,255,255,.48);
+    border: 1px solid rgba(255,255,255,.75);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 25px 70px rgba(120,0,60,.25);
+    position: relative;
+    z-index: 5;
+}
+
+.big-heart {
+    font-size: 100px;
+    animation: beat 1.1s infinite;
+    filter: drop-shadow(0 10px 20px rgba(120,0,60,.3));
+}
+
+@keyframes beat {
+    0%,100% { transform: scale(1); }
+    25% { transform: scale(1.15); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.12); }
+}
+
+h1 {
+    font-size: clamp(38px, 8vw, 65px);
+    margin: 10px 0 20px;
+    text-shadow: 0 4px 15px rgba(100,0,50,.3);
+}
+
+.subtitle {
+    font-size: 21px;
+    line-height: 1.6;
+}
+
+.miss {
+    margin: 28px 0;
+    font-size: clamp(23px, 5vw, 34px);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.message {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.question {
+    margin-top: 35px;
+    font-size: clamp(27px, 6vw, 42px);
+    font-weight: bold;
+}
+
+.buttons {
+    margin-top: 25px;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+button {
+    border: 0;
+    border-radius: 50px;
+    padding: 15px 32px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(100,0,50,.25);
+    transition: transform .25s, background .25s;
+}
+
+button:focus-visible {
+    outline: 3px solid #7b3b5b;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+    }
+}
+
+.yes {
+    background: #f48fb1;
+    color: white;
+}
+
+.yes:hover {
+    transform: scale(1.1);
+    background: #e9789b;
+}
+
+.no {
+    background: white;
+    color: #c65b7d;
+}
+
+.share {
+    margin-top: 25px;
+    background: rgba(255,255,255,.9);
+    color: #a84f70;
+}
+
+.share:hover {
+    transform: scale(1.05);
+}
+
+#shareStatus {
+    margin-top: 10px;
+    min-height: 25px;
+}
+
+.meeting {
+    display: none;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 25px;
+    background: rgba(255,255,255,.18);
+    animation: show .7s ease;
+}
+
+.meeting h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.meeting p {
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.heart {
+    position: fixed;
+    bottom: -50px;
+    pointer-events: none;
+    z-index: 1;
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media(max-width:600px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 35px 18px;
+    }
+
+    .big-heart {
+        font-size: 75px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 190px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="big-heart">💗</div>
+
+    <h1>For My Butki 💗</h1>
+
+    <p class="subtitle">
+        You are not just someone I love...<br>
+        You are the reason my heart smiles. 🥹💕
+    </p>
+
+    <div class="miss">
+        I MISS YOU VERY MUCH 🥺💗<br>
+        Jldi aa jawwwww ❤️🫶🏻
+    </div>
+
+    <p class="message">
+        Every moment without you feels incomplete. 💔<br>
+        I just want to see your smile, hear your voice,<br>
+        and spend some beautiful time with you. 🥺❤️
+    </p>
+
+    <div class="question" id="question">
+        Do you love me? 🥺💖
+    </div>
+
+    <div class="buttons">
+        <button class="yes" onclick="sayYes()">YES ❤️</button>
+        <button class="no" id="noButton" onclick="sayNo()">NO 😭</button>
+    </div>
+
+    <div class="meeting" id="meeting">
+        <h2>YAYYYYY! 🥹❤️</h2>
+
+        <p>
+            I knew your heart would say YES! 💕<br><br>
+            Now there is only one thing left...<br>
+            <strong>Come meet me soon! 🫂❤️</strong><br><br>
+            I miss you so much.<br>
+            Jldi aa jawwwww 🥺💗
+        </p>
+    </div>
+
+</div>
+
+<script>
+const noButton = document.getElementById("noButton");
+const question = document.getElementById("question");
+const meeting = document.getElementById("meeting");
+
+let noCount = 0;
+
+function sayYes() {
+    question.innerHTML = "I LOVE YOU TOO! 🥹💖";
+
+    meeting.style.display = "block";
+
+    createHeartExplosion();
+
+    meeting.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+}
+
+function sayNo() {
+    noCount++;
+
+    const messages = [
+        "Are you sure, Butki? 🥺💗",
+        "Think again, meri jaan 😭❤️",
+        "Pleaseee, pretty please? 🥹💕",
+        "My heart needs a little hug 🫂💖",
+        "Don't make me miss you more 😭💗",
+        "Ek pyaara sa YES, please? 🥺❤️",
+        "Sending you a tiny kiss 😘💋",
+        "Your smile makes everything better 🥰💕",
+        "Can I have one little YES? 🥺💞",
+        "I saved all my cuddles for you 🫂💗",
+        "Aww, meri Butki, say yes na? 🥹❤️",
+        "You make my heart go dhak-dhak 💓"
+    ];
+
+    noButton.innerHTML =
+        messages[Math.min(noCount - 1, messages.length - 1)];
+
+    /*
+       Move the NO button to a random position.
+       It remains clickable, but makes saying NO
+       much harder. 😜
+    */
+    noButton.style.position = "fixed";
+
+    const maxX = Math.max(
+        10,
+        window.innerWidth - noButton.offsetWidth - 10
+    );
+
+    const maxY = Math.max(
+        10,
+        window.innerHeight - noButton.offsetHeight - 10
+    );
+
+    noButton.style.left =
+        Math.floor(Math.random() * maxX) + "px";
+
+    noButton.style.top =
+        Math.floor(Math.random() * maxY) + "px";
+
+    createHearts(6);
+}
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    const heartList = [
+        "❤️",
+        "💗",
+        "💖",
+        "💕",
+        "💓",
+        "💞",
+        "💘",
+        "🥰"
+    ];
+
+    heart.innerHTML =
+        heartList[
+            Math.floor(Math.random() * heartList.length)
+        ];
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+        (18 + Math.random() * 35) + "px";
+
+    const duration =
+        4 + Math.random() * 5;
+
+    heart.style.animationDuration =
+        duration + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(function() {
+        heart.remove();
+    }, duration * 1000);
+}
+
+function createHearts(number) {
+
+    for (let i = 0; i < number; i++) {
+        setTimeout(createHeart, i * 120);
+    }
+}
+
+function createHeartExplosion() {
+
+    for (let i = 0; i < 35; i++) {
+        setTimeout(createHeart, i * 70);
+    }
+}
+
+/* Continuous floating hearts */
+setInterval(createHeart, 700);
+</script>
+
+</body>
+</html>
